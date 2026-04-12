@@ -1,0 +1,16 @@
+{
+  "name": "coffee-time",
+  "version": "1.0.0",
+  "description": "Coffee Time — コーヒー片手に落ち着いたレビューを。可読性・ロジック・セキュリティ・パフォーマンス・エラーハンドリング・テスト・API 設計・DB・フロントエンドの 9 観点で多角的にコード／PR をレビューする Claude Code プラグイン。",
+  "author": {
+    "name": "yh1110"
+  },
+  "keywords": [
+    "code-review",
+    "pull-request",
+    "quality",
+    "security",
+    "performance"
+  ],
+  "license": "MIT"
+}

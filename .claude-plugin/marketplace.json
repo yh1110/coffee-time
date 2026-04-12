@@ -1,0 +1,27 @@
+{
+  "name": "coffee-time-marketplace",
+  "owner": {
+    "name": "yh1110"
+  },
+  "description": "Coffee Time — コード／PR を 9 観点で落ち着いてレビューする Claude Code プラグインを配布するマーケットプレイス",
+  "plugins": [
+    {
+      "name": "coffee-time",
+      "source": "./plugins/coffee-time",
+      "description": "可読性・ロジック・セキュリティ・パフォーマンス・エラーハンドリング・テスト・API 設計・DB・フロントエンドの 9 観点で多角的にコード／PR をレビューするプラグイン。",
+      "version": "1.0.0",
+      "author": {
+        "name": "yh1110"
+      },
+      "keywords": [
+        "code-review",
+        "pull-request",
+        "quality",
+        "security",
+        "performance"
+      ],
+      "license": "MIT",
+      "category": "code-quality"
+    }
+  ]
+}
