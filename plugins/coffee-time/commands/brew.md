@@ -4,7 +4,7 @@ argument-hint: "[file path | PR number | empty(=recent changes)]"
 allowed-tools: Read, Grep, Glob, Bash
 ---
 
-# Coffee Time — Code Review
+# Coffee Time — Brew
 
 Target: $ARGUMENTS
 

@@ -10,16 +10,16 @@
 
 | コマンド | 用途 |
 | --- | --- |
-| `/coffee-time:code-review [path\|PR]` | 9 観点での多角的レビュー。引数がなければ直近の変更が対象。 |
-| `/coffee-time:review-pr <PR>` | PR 向けレビュー（`gh` CLI 必須）。タイトル・スコープ・マイグレーションも確認。 |
-| `/coffee-time:security-review [path]` | OWASP Top 10 に準拠したセキュリティ特化レビュー。 |
-| `/coffee-time:performance-review [path]` | 計算量・I/O・メモリ・FE/BE 固有観点でのパフォーマンスレビュー。 |
+| `/coffee-time:brew [path\|PR]` | 9 観点での多角的レビュー。引数がなければ直近の変更が対象。 |
+| `/coffee-time:cupping <PR>` | PR 向けレビュー（`gh` CLI 必須）。タイトル・スコープ・マイグレーションも確認。 |
+| `/coffee-time:roast [path]` | OWASP Top 10 に準拠したセキュリティ特化レビュー。 |
+| `/coffee-time:grind [path]` | 計算量・I/O・メモリ・FE/BE 固有観点でのパフォーマンスレビュー。 |
 
 ### サブエージェント
 
 | エージェント | 用途 |
 | --- | --- |
-| `code-reviewer` | 9 観点ベースの根拠付きレビューを行う専門エージェント。 |
+| `barista` | 9 観点ベースの根拠付きレビューを行う専門エージェント。 |
 
 ## 9 軸レビューの観点
 
@@ -45,15 +45,15 @@
 ## 使い方
 
 ```text
-/coffee-time:code-review                    # 直近の変更をレビュー
-/coffee-time:code-review src/api/auth.ts    # ファイルを指定
-/coffee-time:code-review 1234               # PR 番号を指定
-/coffee-time:review-pr 1234
-/coffee-time:security-review src/
-/coffee-time:performance-review src/workers/
+/coffee-time:brew                         # 直近の変更をレビュー
+/coffee-time:brew src/api/auth.ts         # ファイルを指定
+/coffee-time:brew 1234                    # PR 番号を指定
+/coffee-time:cupping 1234                 # PR 専用レビュー
+/coffee-time:roast src/                   # セキュリティレビュー
+/coffee-time:grind src/workers/           # パフォーマンスレビュー
 ```
 
-サブエージェントは Claude が自動で選ぶか、`code-reviewer エージェントでレビューして` のように指示できます。
+サブエージェントは Claude が自動で選ぶか、`barista エージェントでレビューして` のように指示できます。
 
 ## 設計方針
 

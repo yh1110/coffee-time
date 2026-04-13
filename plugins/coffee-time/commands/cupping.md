@@ -4,11 +4,11 @@ argument-hint: "<PR number | PR URL>"
 allowed-tools: Bash, Read, Grep, Glob
 ---
 
-# Coffee Time — Pull Request Review
+# Coffee Time — Cupping
 
 Target PR: $ARGUMENTS
 
-This command reuses the 9-axis rubric from `/coffee-time:code-review`, with additional PR-level checks (title / description / scope / migrations).
+This command reuses the 9-axis rubric from `/coffee-time:brew`, with additional PR-level checks (title / description / scope / migrations).
 
 ---
 
@@ -32,7 +32,7 @@ Before forming opinions, use `Grep` to find callers of changed functions and ver
 
 ## 2. Apply the 9-axis review
 
-Apply every axis (A1–A9) defined in `/coffee-time:code-review`:
+Apply every axis (A1–A9) defined in `/coffee-time:brew`:
 
 - A1 Readability & Maintainability
 - A2 Logic & Correctness

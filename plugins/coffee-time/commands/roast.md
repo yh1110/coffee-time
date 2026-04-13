@@ -4,7 +4,7 @@ argument-hint: "[file path | empty(=recent changes)]"
 allowed-tools: Read, Grep, Glob, Bash
 ---
 
-# Coffee Time — Security Review
+# Coffee Time — Roast
 
 Target: $ARGUMENTS
 
